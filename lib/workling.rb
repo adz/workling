@@ -211,3 +211,6 @@ require_in_tree "workling/routing/base"
     require File.join(File.dirname(rb_file), File.basename(rb_file, ".rb"))
   end
 end
+
+# Ensure remote client dependencies can be found on boot
+Workling::Remote.client   # will be a remote client, like: spawn, starling, rudeq, etc...
