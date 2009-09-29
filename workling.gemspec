@@ -43,6 +43,7 @@ Gem::Specification.new do |s|
              "lib/workling/return/store/iterator.rb",
              "lib/workling/return/store/memory_return_store.rb",
              "lib/workling/return/store/starling_return_store.rb",
+             "lib/workling/return/store/rude_q_return_store.rb",
              "lib/workling/routing/base.rb",
              "lib/workling/routing/class_and_method_routing.rb",
              "lib/workling/routing/static_routing.rb",
