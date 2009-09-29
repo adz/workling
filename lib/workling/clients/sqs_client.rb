@@ -1,6 +1,3 @@
-require 'json'
-require 'right_aws'
-
 #
 #  An SQS client
 #
@@ -42,6 +39,16 @@ module Workling
       attr_reader :sqs_options
       attr_reader :messages_per_req
       attr_reader :visibility_timeout
+
+      def self.load
+        begin
+          # Not sure if there's a gem... this was up top before, above class def
+          require 'json'
+          require 'right_aws'
+        rescue Exception => e
+          raise WorklingError.new("Couldnt load the sqs library. check that you have right_aws and json installed")
+        end
+      end
       
       # Starts the client. 
       def connect
