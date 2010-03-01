@@ -8,6 +8,7 @@ Workling gives your Rails App a simple API that you can use to make code run in 
 
 You can configure how the background code will be run. Currently, workling supports Starling, BackgroundJob and Spawn Runners. Workling is a bit like Actve* for background work: you can write your code once, then swap in any of the supported background Runners later. This keeps things flexible. 
 
+
 ## Installing Workling
 
 The easiest way of getting started with workling is like this: 
